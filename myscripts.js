@@ -52,3 +52,5 @@ $(document).ready(function(){
     $(this).parent().next().slideToggle("slow");
   });
 });
+
+$('.svg-inject').svgInject();

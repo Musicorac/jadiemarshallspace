@@ -56,6 +56,9 @@ a {
 	color: #656565;
 
 }
+path {
+	fill: currentcolor;
+}
 
 @media only screen and (max-width: 600px) {
 	h1 {
@@ -672,7 +675,13 @@ footer ul {
 }
 footer li {
 	display: block;
-	margin: 0px 25px;
+	padding: 0px 25px;
+}
+.navi li {
+	border-right: 2px solid;
+}
+.navi li:last-child {
+	border-right: none;
 }
 footer a {
 	color: #DBDBDB;
@@ -692,19 +701,44 @@ footer p {
 	text-align: center;
 }
 .ftxt {
-	display: inline-block;
-	width: 100%;
-	text-align: center;
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: 25px;
+	text-align: left;
+}
+
+.svgs {
+	margin: 10px 0px;
+}
+
+.svgs img {
+	height: 50px;
+	width: 50px;
 }
 
 @media only screen and (max-width: 600px) {
 	footer ul {
 		font-size: 18px;
+		margin: 15px 0px;
 	}
 	footer li {
-		margin: 0px 5px;
+		padding: 0px 5px;
 	}
 	footer p {
 		font-size: 1rem;
+	}
+	.svgs img {
+		height: 30px;
+		width: 30px;
+	}
+	.svgs {
+		justify-content: space-evenly;
+	}
+	.ftxt {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		left: 0px;
 	}
 }

@@ -1,0 +1,710 @@
+
+/* -------------- Overall Style -------------- */
+html {
+	background: transparent;
+}
+body {
+	width: 100%;
+	padding: 0px;
+	margin: auto;
+	min-height: 100vh;
+	position:relative;
+	color: #656565;
+	background: url("pics/geometric-leaves.png") repeat #b87e7e;
+ 	font-family: "Courier New";
+	font-size: 1.75rem;
+}
+html {
+
+background: transparent !important;
+
+}
+head {
+	
+}
+.body {
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 145px;
+	max-width: 1200px;
+	background: transparent !important;
+}
+header {
+	display: flex;
+}
+h1 {
+	font-size: 4.5rem;
+}
+
+h2 {
+	font-size: 3.5rem;
+}
+h3 {
+	font-size: 2.5rem;
+}
+p {
+	font-size: 1.75rem;
+    line-height: 1.6em;
+	font-family: "Montserrat";
+	text-align: justify;
+}
+a {
+	font-family: "Montserrat";
+	color: #656565;
+
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+}
+
+button {
+	padding: 10px;
+	box-shadow: 10px 10px;
+	transition: 0.4s;
+	border: none;
+	text-decoration: none;
+}
+
+button:hover {
+	filter: invert(10%);
+	text-decoration: none;
+}
+
+a button {
+	text-decoration: none;
+}
+
+img {
+	height:100%;
+}
+/* --------------- Header Style --------------- */
+header {
+	display: flex;
+	border-bottom: 5px solid #aaf0d1;
+	background-color: #656565;
+	max-width: unset;
+	margin: auto;
+}
+
+nav {
+	width: 100%;
+	background-color: #656565;
+	display: inline-block;
+	max-width: 1980px;
+	margin: auto;
+	max-height: 140px;
+}
+header ol {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	width: 66%;
+	padding: 0px;
+	float: right;
+}
+header li {
+	width: auto;
+	height: auto;
+
+}
+.icon {
+	height: 100px;
+	width: auto;
+}
+
+.overlay {
+	height: 100px;
+	width: 100px;
+	opacity: 0;
+	background-color: #aaf0d1;
+	border-radius: 50%;
+}
+
+.icon a {
+	text-decoration: none;
+}
+
+.icon:hover .overlay {
+	opacity: 1;
+}
+.icon:hover img {		
+	display: none;
+}
+
+.text {
+	text-decoration: none;
+	color: #656565;
+	font-size: 20px;
+	text-align: center;
+	line-height: 100px;
+}
+
+.first {
+	display: inline-flex;
+	justify-content: center;
+	width: 33%;
+	height: 100%;
+	border-right: 5px solid #aaf0d1;
+	padding: 20px 0px;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.first .icon {
+	margin: auto;
+}
+
+.first:hover img {
+	display: flex;
+}
+
+@media only screen and (max-width: 1199px) {
+	.icon {
+		height: 75px;
+		margin: 0px;
+	}
+	.first {
+		display: none;
+	}
+	header ol {
+		width: 100%;
+	}	
+	.overlay {
+		width: 75px;
+		height: 75px;
+	}
+	.text {
+		line-height: 75px;
+		font-size: 20px;
+	}	
+}
+
+@-moz-document url-prefix() {
+	.first {
+	}
+}
+
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+	.first {
+		height: 100px;
+	}
+	.twoup h1 {
+		margin: 10px 0px;
+	}
+}
+
+/* -------------- Home Page Style -------------- */
+
+.wrapper {
+}
+
+.twoup {
+	display: inline-block;
+	padding: 25px 0px;
+	height: auto;
+	width: 100%;
+	border-bottom: 5px solid;
+	max-height: 400px;
+}
+.twoup:last-of-type {
+	border-bottom: none;
+}
+
+.pic {
+	width: 33.3%;
+	height: 100%;
+	max-height: 400px;
+	display: table;
+	justify-content: center;
+}
+
+.imgwrapper {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.pic img {
+	max-width: 400px;
+	min-height: 100px;
+	height: auto;
+	width: 100%;
+	display: inline-block;
+}
+
+.info {
+	width: 66%;
+	display: table;
+	height: 100%;
+	max-height: 400px;
+}
+
+.textwrapper {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0px 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.twoup h3 {
+	font-size: 1.75rem;
+	line-height: 1.5em;
+}
+.twoup h1 {
+	margin: 25px 0px;
+}
+
+@media only screen and (max-width: 1199px) {
+	.pic {
+		width: 90%;
+		margin: auto;
+		max-height: 100px;
+	}
+	.pic img {
+		min-height: unset;
+	}
+	.info {
+		width: 100%;
+	}
+	.twoup {
+		max-height: unset;
+	}
+	.left {
+		float: none;
+	}
+	.right {
+		float: none;
+	}
+}
+
+/* ------------- Project Page Style ------------- */
+
+.top {
+	text-align: center;
+}
+
+.project {
+	display:none;
+}
+
+.project:last-of-type {
+	border-bottom: none;
+}
+
+.project .wrapper {
+	padding: 0px 25px;
+}
+
+.over {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	color: #656565;
+	text-decoration: none;
+}
+
+.demo {
+	padding: 25px;
+	width: 85%;
+	color: #656565;
+	font-size: 24px;
+	background-color: #aaf0d1;
+	border-radius: 10px;
+
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+	padding: 25px;
+	width: calc(100% - 50px);
+	color: #656565;
+	font-size: 2rem;
+	background-color: #aaf0d1;
+	border-radius: 10px;
+	cursor: pointer;
+	display: table-cell;
+	vertical-align: middle;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  filter: invert(10%);
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  display: none;
+  overflow: hidden;
+}
+
+.demo:hover {
+	cursor: pointer;
+}
+
+.jump {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	border-bottom: 5px solid;
+}
+
+.jump .wrapper {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.jump ul {
+	text-align: left;
+	font-size: 2rem;
+	padding: 20px 0px;
+	margin: auto;
+	width: 100%;
+	max-width: 450px;
+	display: inline-block;
+}
+.panel ul {
+	text-align: left;
+	font-size: 2rem;
+	padding: 20px 0px;
+	margin: auto;
+	width: 100%;
+	max-width: 900px;
+	display: inline-block;
+}
+
+.jump li {
+	list-style: inside;
+	list-style-type: none;
+}
+.panel li {
+	list-style: inside;
+}
+
+.jump a {
+	font-size: 2rem;
+	height: 50px;
+	display: inline-flex;
+	padding: 20px 0px;
+	width: 100%;
+}
+
+.jump img {
+	height: 100%;
+	width: auto;
+	margin: auto;
+	max-height: 150px;
+}
+
+.jump a img {
+	width: 50px;
+	height: 50px;
+	display:table-cell;
+}
+.jump h3 {
+	display: table-cell;
+	vertical-align: middle;
+}
+.jump p {
+	display: inline-block;
+    text-align: left;
+    line-height: 50px;
+    width: calc(100% - 60px);
+    padding: 0px;
+    margin: 0px
+}
+
+.up {
+	width: 100%;
+	margin: auto;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+.up a {
+	display: table;
+}
+
+.up img {
+	height: 50px;
+	width: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.up .uTxt {
+	font-size: 2rem;
+	line-height: 50px;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+	.ji {
+		width: 100% !important;
+		height: auto !important;
+	}
+	.project h2, h3 {
+		text-align: center;
+	}
+	.jump a {
+		font-size: 1.5rem;
+	}
+	.jump ul, .panel ul {
+		font-size: 1.5rem;
+	}
+	.panel {
+		padding: 0px 20px;
+	}
+}
+
+/* ----------------- Slider Style -------/---------- */
+
+.slidewrapper {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+.flexslider {
+	height: 600px;
+	width: 600px;
+	background: none !important;
+	border: none !important;
+}
+
+.long {
+	height: 500px;
+	width: 1000px;
+}
+
+@media only screen and (max-width: 1199px) {
+	.flexslider {
+		width: 100%;
+		height: auto;
+	}
+ 
+	.long {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* -------------- Resume Page Style ------------- */
+
+
+
+/* -------------- Contact Page Style -------------- */
+
+.contact {
+	display: inline-block;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 50px 0px;
+}
+
+.cIcon {
+	width: 25%;
+	max-height: 200px;
+	max-width: 200px;
+	display: inline-block;
+}
+
+.cIcon img {
+	width: 100%;
+	height: auto;
+	max-heigth: 200px;
+}
+
+.cInfo {
+	width: 75%;
+	text-align: left;
+	display: inline-block;
+	height: 100%;
+	max-height: 200px;
+}
+
+.cButton {
+	width: 100%;
+	height: 100%;
+	max-height: 200px;
+	display: inline-block;
+	color: #656565;
+	text-align: center;
+}
+
+.cInfo .wrapper {
+	display: table;
+	vertical-align: middle;
+	padding-left: 50px;
+	height: 100%;
+}
+
+.wrapper h3 {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cwrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.bwrap {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.bwrap a {
+	color: #656565;
+	text-decoration: none;
+}
+
+.contactbutton {
+	padding: 25px;
+	width: calc(100% - 50px);
+	color: #656565;
+	font-size: 2rem;
+	background-color: #aaf0d1;
+	border-radius: 10px;
+	cursor: pointer;
+	display: table-cell;
+	vertical-align: middle;
+	border: none;
+}
+
+@media only screen and (max-width: 1199px) {
+	.contact {
+		padding: 25px 0px;
+		width: 100%;
+	}
+	.cInfo {
+		width: 100%;
+		height: 100px;
+		text-align: -webkit-center;;
+
+	}	
+	.cInfo .wrapper {
+		padding-left: 10px;
+		text-align: center;
+	}
+	.cIcon {
+		display: none;
+
+	}
+	.cButton {
+		display: flex;
+		width: 95%;
+		margin: auto;
+		justify-content: center;
+		text-align: center;
+	}
+	.crwap {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 600px)
+{
+	.wrapper h3 {
+		font-size: 18px ;
+	}
+}
+
+/* ----------------- Footer Style -------/---------- */
+
+footer {
+	width: 100%;
+	border-top: 5px solid #aaf0d1;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	background-color: #656565;
+	color: #DBDBDB;
+	height: 140px;
+}
+footer ul {
+	list-style: none;
+	width: 100%;
+	margin: 25px 0px;
+	padding: 0px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 24px;
+}
+footer li {
+	display: block;
+	margin: 0px 25px;
+}
+footer a {
+	color: #DBDBDB;
+	font-size: 24px;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer p {
+	margin: 0px;
+	display: inline-flex;
+	font-size: 24px;
+}
+.container {
+	width: 100%;
+	text-align: center;
+}
+.ftxt {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	footer ul {
+		font-size: 18px;
+	}
+	footer li {
+		margin: 0px 5px;
+	}
+	footer p {
+		font-size: 1rem;
+	}
+}

@@ -119,6 +119,7 @@ header ol {
 	width: 66%;
 	padding: 0px;
 	float: right;
+	margin: 20px 0px;
 }
 header li {
 	width: auto;
@@ -128,8 +129,6 @@ header li {
 .icon {
 	height: 100px;
 	width: auto;
-	transition: 0.4s;
-
 }
 
 .overlay {
@@ -138,7 +137,6 @@ header li {
 	opacity: 0;
 	background-color: #aaf0d1;
 	border-radius: 50%;
-	transition: 0.4s;
 
 }
 
@@ -169,7 +167,7 @@ header li {
 	border-right: 5px solid #aaf0d1;
 	padding: 20px 0px;
 	text-align: center;
-	padding: 20px 0px;
+	padding: 18px 0px;
 }
 
 .first .icon {

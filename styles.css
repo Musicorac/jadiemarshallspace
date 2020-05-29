@@ -26,10 +26,10 @@ head {
 	width: 100%;
 	margin: auto;
 	padding: 0px;
-	min-height: 100vh;
 	position: relative;
 	padding-bottom: 145px;
 	max-width: 1200px;
+	min-height: 100vh;
 	background: transparent !important;
 }
 header {
@@ -128,6 +128,8 @@ header li {
 .icon {
 	height: 100px;
 	width: auto;
+	transition: 0.4;
+
 }
 
 .overlay {
@@ -136,6 +138,8 @@ header li {
 	opacity: 0;
 	background-color: #aaf0d1;
 	border-radius: 50%;
+	transition: 0.4;
+
 }
 
 .icon a {
@@ -364,8 +368,12 @@ header li {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  display: none;
-  overflow: hidden;
+	display: none;
+	overflow: hidden;
+}
+
+.panel:last-of-type {
+	padding-bottom: 25px;
 }
 
 .demo:hover {
@@ -385,7 +393,11 @@ header li {
 	width: 100%;
 }
 
-.jump ul {
+.wrapper img {
+	margin: 0px 25px;
+}
+
+.jump ul , .wrapper ul {
 	text-align: left;
 	font-size: 2rem;
 	padding: 20px 0px;
@@ -404,15 +416,15 @@ header li {
 	display: inline-block;
 }
 
-.jump li {
+.jump li , .wrapper li  {
 	list-style: inside;
-	list-style-type: none;
+	list-style-type: none !important;
 }
 .panel li {
 	list-style: inside;
 }
 
-.jump a {
+.jump a, .wrapper a {
 	font-size: 2rem;
 	height: 50px;
 	display: inline-flex;
@@ -427,7 +439,7 @@ header li {
 	max-height: 150px;
 }
 
-.jump a img {
+.jump a img, .wrapper img {
 	width: 50px;
 	height: 50px;
 	display:table-cell;
@@ -436,7 +448,7 @@ header li {
 	display: table-cell;
 	vertical-align: middle;
 }
-.jump p {
+.jump p, .wrapper p{
 	display: inline-block;
     text-align: left;
     line-height: 50px;
@@ -486,7 +498,7 @@ header li {
 	.jump a {
 		font-size: 1.5rem;
 	}
-	.jump ul, .panel ul {
+	.jump ul, .panel ul, .wrapper ul {
 		font-size: 1.5rem;
 	}
 	.panel {
@@ -651,7 +663,43 @@ header li {
 	}
 }
 
-/* ----------------- Footer Style -------/---------- */
+/* ------------------ Quiz Style ------------------ */
+
+.grid {
+	text-align: center;
+	padding: 25px;
+	padding-bottom: 50px;
+}
+
+.answers {
+	width: 100%;
+	display: table;
+	height: 100px;
+}
+
+.answers button {
+	width: 20%;
+	height: 100%;
+	margin: 0px 25px;
+	color: #656565;
+	font-size: 1.5rem;	background-color: #aaf0d1;
+	border-radius: 10px;
+	cursor: pointer;
+	display: table-cell;
+	vertical-align: middle;
+	border: none;
+}
+
+.foot {
+	margin: 50px 0px;
+}
+
+.foot p {
+	text-align: center;
+	padding: 25px 0px;
+}
+
+/* ----------------- Footer Style ----------------- */
 
 footer {
 	width: 100%;

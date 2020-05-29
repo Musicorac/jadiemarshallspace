@@ -36,6 +36,7 @@
 	<div class="project" id="web">
 		<div class="container">
             <h2>This Website!</h2>
+
 			<h3><button class="accordion">Project Information</button></h3>
             <div class="panel">
                 <p>&emsp;This website was hand-written using HTML5, CSS3, PHP, and JavaScript. I own this domain and use Hostsinger as my hosting platform. This site is responsive, 
@@ -80,6 +81,22 @@
 					</a>
 				</div>
             </div>
+
+			<h3><button class="accordion">More Examples</button></h3>
+			<div class="panel">
+				<div class="wrapper">
+					<ul>
+						<li><a href="quiz.php"><img src="pics/question.png" alt="ciruclar icon, question mark"><p>JavaScript Quiz Element<p></a></li>
+					</ul>
+				</div>
+
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
 		</div>
 
 	</div><!--End of Website Project-->

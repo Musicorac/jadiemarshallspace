@@ -32,7 +32,7 @@ function getQuestions(qs, answers) {
 		var q = new Question(qs[i], answers[i], answers[i][0]);
 		res.push(q);
 	}
-	console.log("Questions length: " +res.length);
+	//console.log("Questions length: " +res.length);
 	return res;
 };
 
@@ -41,7 +41,7 @@ function Quiz(questions) {
 	this.questions=questions;
 	this.index=0;
 	this.len = questions.length;
-	console.log("New Quiz: "+this.score +" " + this.questions.length + " " + this.index);
+	//console.log("New Quiz: "+this.score +" " + this.questions.length + " " + this.index);
 }
 
 function getIndex(quiz) {
@@ -57,7 +57,7 @@ Quiz.prototype.guess = function(answer) {
 
 function isEnded(q)
 {
-	console.log("isEnded: index = " +q.index +", length = " +q.len);
+	//console.log("isEnded: index = " +q.index +", length = " +q.len);
 	return q.index === q.len;
 }
 
@@ -66,16 +66,16 @@ function Question(text, choices, answer) {
 	this.text = text;
 	this.choices = choices;
 	this.answer = answer;
-	console.log("New Question: " +this.text + " " +this.choices +" " +this.answer);
+	//console.log("New Question: " +this.text + " " +this.choices +" " +this.answer);
 }
 
 function isCorrectAnswer(quiz, choice) {
-	console.log("Comparing: "+quiz.answer +" === " +choice);
+	//console.log("Comparing: "+quiz.answer +" === " +choice);
 	return quiz.answer === choice;
 }
 
 Question.prototype.isCorrectAnswer = function(choice) {
-	console.log("Prototype Comparing: "+this.answer +" === " +choice);
+	//console.log("Prototype Comparing: "+this.answer +" === " +choice);
 	return this.answer === choice;
 }
 
@@ -84,14 +84,14 @@ function populate(){
 		showScores();
 	}
 	else {
-		console.log("Populate");
+		//console.log("Populate");
 		var element = document.getElementById("question");
 		element.innerHTML = getIndex(quiz).text;
 		
 		var choices = getIndex(quiz).choices;
 		//Shuffles order
 		shuffle(choices);
-		console.log("Shuffled: " +choices);
+		//console.log("Shuffled: " +choices);
 		for(var i=0; i<choices.length; i++)
 		{
 			var element = document.getElementById("choice" + i);
@@ -127,7 +127,7 @@ function showProgress() {
 
 function showScores() {
 	var gameOverHTML = "<h1>Results</h1>";
-	gameOverHTML+= "<h2 id='score'>Your Scores: " +quiz.score +"</h2>";
+	gameOverHTML+= "<h2 id='score'>Your Score: " +quiz.score +"</h2>";
 	var elem = document.getElementById("quiz");
 	elem.innerHTML = gameOverHTML;
 };

@@ -53,4 +53,3 @@ $(document).ready(function(){
   });
 });
 
-$('.svg-inject').svgInject();

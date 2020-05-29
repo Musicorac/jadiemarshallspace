@@ -1,10 +1,6 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="FlexSlider/jquery.flexslider.js"></script>
-  <script src="myscripts.js"></script>
   <link href="pics/biopic.png" rel="shortcut icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Me</title>

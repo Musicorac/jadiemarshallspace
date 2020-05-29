@@ -1,5 +1,5 @@
-<html>
-<head>	
+<!DOCTYPE html>
+<html lang="en">
 	<link rel="stylesheet" href="styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
@@ -19,7 +19,7 @@
 		<div id="quiz">
 			<h1>JavaScript Quiz, Nerd Edition</h1>
 			
-			<h3 id="question"></h3>
+			<h3 id="question">.</h3>
 			
 			<div class="answers">
 				<button id="btn0"><span id="choice0"></span></button>
@@ -32,7 +32,9 @@
 				<h3 id="progress">Question x of y</h3>
 			</div>
 		</div>
-	<a href="projects.php"><h3><button class="accordion">Back to Projects</button></h3></a>
+	<form>
+		<h3><button class="accordion" type="submit" formaction="projects.php">Back to Projects</button></h3>
+	</form>	
 	<h3><button onClick="window.location.reload();" class="accordion">Refresh Quiz</button></h3>
 	<h3><button class="accordion">Project Description</button></h3>
 	<div class="panel">

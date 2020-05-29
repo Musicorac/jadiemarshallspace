@@ -1,5 +1,5 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
   <link rel="stylesheet" href="styles.css">
   <link href="pics/biopic.png" rel="shortcut icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,9 @@
 		<div class="cButton">
 			<div class="cwrap">
 				<div class="bwrap">
-					<a href="mailto: jmarshall@aggienetwork.com"><button class="contactbutton">Send me an email!</button></a>
+					<form action="mailto:jmarshall@aggienetwork.com">
+						<button class="contactbutton" type="submit" title="mailto:jmarshall@aggienetwork.com">Send me an email!</button>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -26,13 +28,16 @@
 	<div class="contact">
 		<div class="cIcon"><img src="pics/phone.png" alt="Phone icon, outline of a telephone."></div>
 		<div class="cInfo"><div class="wrapper"><h3>Cell: (325) 226-0055</h3></div></div>
+	</div>
 		<div class="cButton">
 			<div class="cwrap">
 				<div class="bwrap">
-					<a href="tel: +13252260055"><button class="contactbutton">Give me a call!</button></a>
+					<form>
+						<button class="contactbutton" type="submit" formaction="tel:+13252260055" title="tel:+13252260055">Give me a call!</button>
+					</form>
 				</div>
 			</div>
-		</div>	</div>
+		</div>\
 </div>
 <footer>
 	<?php include 'footer.php';?>

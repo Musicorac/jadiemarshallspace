@@ -1,13 +1,13 @@
-<html>
-<head>
+<!DOCTYPE html>
+<html lang="en">
   <link href="pics/biopic.png" rel="shortcut icon" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
   <link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css">
   <script src="FlexSlider/jquery.flexslider.js"></script>
-  <script type="text/javascript" src="myscripts.js"></script>
+  <script src="myscripts.js"></script>
   <title>Projects and Experience</title>
   <meta name="description" content="Projects and work experience which Jadie Marshall has been involved in,
 	including Agile and Scrum teams, Python, Web Development, and Saas projects.">
@@ -86,7 +86,14 @@
 			<div class="panel">
 				<div class="wrapper">
 					<ul>
-						<li><a href="quiz.php"><img src="pics/question.png" alt="ciruclar icon, question mark"><p>JavaScript Quiz Element<p></a></li>
+						<li><a href="https://github.com/Musicorac/jadiemarshallspace.git" target="_blank">
+								<img src="pics/tools.png" alt="circular icon, git logo">
+								<p>GitHub Repo (Opens in New Tab)</p></a>
+						</li>
+						<li><a href="quiz.php">
+							<img src="pics/question.png" alt="ciruclar icon, question mark">
+							<p>JavaScript Quiz Element</p></a>
+						</li>
 					</ul>
 				</div>
 
@@ -220,8 +227,9 @@
 						</ul>
 					</div>
 				</div>
-				
-				<a href="https://dry-island-56062.herokuapp.com/" target="_blank"><h3><button class="contactButton">Inventory System Demo (Opens in New Tab)</button></h3></a>
+				<form target="_blank">
+					<h3><button class="accordion" type="submit" formaction="https://dry-island-56062.herokuapp.com/">Inventory Systems Demo (Opens in New Tab)</button></h3>
+				</form>
 				
 			<h3><button class="accordion">Project Description</button></h3>
 			<div class="panel">

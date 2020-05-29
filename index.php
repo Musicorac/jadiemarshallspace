@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
   <link href="pics/biopic.png" rel="shortcut icon" />
@@ -11,7 +12,6 @@
 <header>
 	<?php include 'header.php';?>
 </header>
-</head>
 <div class="body">
 	<div class="twoup">
 		<div class="pic left">
@@ -34,7 +34,7 @@
 		<div class="info">
 			<div class="textwrapper">
 				<h1>Education</h1>
-				<h3>B.S. of Computer Engineering, December 2019</h2>
+				<h3>B.S. of Computer Engineering, December 2019</h3>
 			</div>
 		</div>
 	</div>

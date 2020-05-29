@@ -41,8 +41,8 @@
 		<p>&emsp;For this element, I used the PapaParser library to read data from a CSV. This library is a CSV parser library that allows in-browser 
 		parsing of CSV files. The quiz questions and answer choices are stored in this CSV. Storing the quiz in a CSV was used so that the right answer 
 		would not be visible by inspecting the HTML or JavaScipt, and so that editing of the quiz questions and/or answers would be extremely easy. 
-		The way this is written, I can add, change, or delete items from the CSV, and the quiz would automatically adapt to those changes. The .htaccess 
-		file for the server hosting my site was edited to prevent the file being opened from the browser. 
+		The way this is written, I can add, change, or delete items from the CSV, and the quiz would automatically adapt to those changes. This file can
+		be read, however, by going to its direct URL.
 		<br><br>&emsp;I used JavaScript's object-oriented nature to create Question and Quiz objects to store the quiz data from the CSV file. I shuffled 
 		the answers around when they are inserted into the HTML so that the quiz has a more dynamic element to it. This is done using the Fisher-Yates 
 		shuffle algorithm, which is a randomization algorithm designed so that there is an equal chance for each permutation of the array to exist.

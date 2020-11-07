@@ -134,6 +134,8 @@
 				<br><br>&emsp; Each of the icons utilized are created from the editing of Creative Commons licensed clipart or icons into those that are used on the site. These are manipulated using GIMP, 
 				a free, open-source alternative to Adobe Photoshop. Generally, a line art icon was selected, added over the mint green circle, and the line art either colored or made transparent, depending 
 				on the need for that icon.
+				<br><br>&emsp;Additionally, I recreated this website as an ASP.NET web application. However, as my chosen domain hosting service, Hostsinger, is a Linux-based service, it is not supported
+				for hosting a Windows-based framework application. However, you can find my Azure repository containing this project under the "More Examples" dropdown in this section.
 				</p>
 				<div class="up">
 					<a href="#top">
@@ -171,6 +173,10 @@
 						<li><a href="https://github.com/Musicorac/jadiemarshallspace.git" target="_blank">
 								<img src="pics/tools.png" alt="circular icon, git logo">
 								<p>GitHub Repo (Opens in New Tab)</p></a>
+						</li>
+						<li><a href="https://dev.azure.com/jadiemarshall/PortfolioProject" target="_blank">
+								<img src="pics/r.png" alt="circular icon, generic source control logo"
+								<p>Azure ASP.NET Repo (Opens in New Tab)</p></a>
 						</li>
 						<li><a href="quiz.php">
 							<img src="pics/question.png" alt="ciruclar icon, question mark">

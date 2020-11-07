@@ -175,7 +175,7 @@
 								<p>GitHub Repo (Opens in New Tab)</p></a>
 						</li>
 						<li><a href="https://dev.azure.com/jadiemarshall/PortfolioProject" target="_blank">
-								<img src="pics/r.png" alt="circular icon, generic source control logo"
+								<img src="pics/repo.png" alt="circular icon, generic source control logo"
 								<p>Azure ASP.NET Repo (Opens in New Tab)</p></a>
 						</li>
 						<li><a href="quiz.php">

@@ -3,7 +3,7 @@
 <ul class="navi">
 	<li><a href="index.php">Home</a></li>
 	<li><a href="projects.php">Projects</a></li>
-	<li><a href="Marshall_Jadie_2020Resume.pdf" target="_blank">Resume</a></li>
+	<li><a href="Marshall_Jadie_2020ResumeUpdated.pdf" target="_blank">Resume</a></li>
 	<li><a href="contact.php">Contact</a></li>
 </ul>
 <div class="links">

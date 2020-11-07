@@ -25,11 +25,11 @@
 		<img class="ji" src="pics/jump.jpg" alt="Arrow pointing down, indicating Projects below">
 		<div class="wrapper">	
 			<ul>
-				<li><a href="projects.aspx?project=eng#eng"><img src="pics/imedx.png" alt="circular icon, symbol for heart beat"><p>Software Engineer Experience</p></a></li>
-				<li><a href="projects.aspx?project=web#web"><img src="pics/web.png" alt="circular icon, symbol for web"><p>This Website</p></a></li>
-				<li><a href="projects.aspx?project=listen#listen"><img src="pics/listen.png" alt="circular icon, headphones"><p>Rubble Listening Device</p></a></li>
-				<li><a href="projects.aspx?project=saas#saas"><img src="pics/saas.png" alt="circular icon, sailboat"><p>Saas Sailing Inventory System</p></a></li>
-				<li><a href="projects.aspx?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>/Web Developer Experience</p></a></li>
+				<li><a href="projects.php?project=eng#eng"><img src="pics/imedx.png" alt="circular icon, symbol for heart beat"><p>Software Engineer Experience</p></a></li>
+				<li><a href="projects.php?project=web#web"><img src="pics/web.png" alt="circular icon, symbol for web"><p>This Website</p></a></li>
+				<li><a href="projects.php?project=listen#listen"><img src="pics/listen.png" alt="circular icon, headphones"><p>Rubble Listening Device</p></a></li>
+				<li><a href="projects.php?project=saas#saas"><img src="pics/saas.png" alt="circular icon, sailboat"><p>Saas Sailing Inventory System</p></a></li>
+				<li><a href="projects.php?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>/Web Developer Experience</p></a></li>
 			</ul>
 		</div>
 	</div>
@@ -172,7 +172,7 @@
 								<img src="pics/tools.png" alt="circular icon, git logo">
 								<p>GitHub Repo (Opens in New Tab)</p></a>
 						</li>
-						<li><a href="quiz.aspx">
+						<li><a href="quiz.php">
 							<img src="pics/question.png" alt="ciruclar icon, question mark">
 							<p>JavaScript Quiz Element</p></a>
 						</li>

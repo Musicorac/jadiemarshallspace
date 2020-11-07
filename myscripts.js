@@ -30,17 +30,20 @@ var dynamicContent = getParameterByName('project');
 
  $(document).ready(function() {
 	// Check if the URL parameter is apples
-	if (dynamicContent == 'listen') {
-		$('#listen').show();
+	if (dynamicContent == 'eng') {
+		$('#eng').show();
 	} 
 	// Check if the URL parameter is oranges
-	else if (dynamicContent == 'saas') {
-		$('#saas').show();
+	else if (dynamicContent == 'web') {
+		$('#web').show();
 	} 
 	// Check if the URL parameter is bananas
-	else if (dynamicContent == 'dev') {
-		$('#dev').show();
-	} 
+	else if (dynamicContent == 'listen') {
+		$('#listen').show();
+	}
+	else if (dynamicContent == 'saas') {
+		$('#saas').show();
+    }
 	// Check if the URL parmeter is empty or not defined, display default content
 	else {
 		$('#web').show();

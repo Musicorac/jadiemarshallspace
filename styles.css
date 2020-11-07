@@ -174,10 +174,6 @@ header li {
 	margin: auto;
 }
 
-.first:hover img {
-	display: flex;
-}
-
 @media only screen and (max-width: 1199px) {
 	.icon {
 		height: 75px;

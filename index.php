@@ -20,8 +20,9 @@
 		<div class="info">
 			<div class="textwrapper">
 				<h1>Howdy!</h1>
-				<h3>My name is Jadie Marshall. I am a recent Texas A&M Computer Engineering graduate seeking full-time 
-					employment. I am in the market for a position which will allow me to transform my classroom knowledge into real-world experience.
+				<h3>My name is Jadie Marshall. I am a Software Engineer seeking a full-time position
+					in the Katy, Texas commutable area, or one which is fully remote. I am interested in improving
+					knowledge and skills in a variety of languages, tools, and technologies.
 				</h3>
 			</div>
 		</div>

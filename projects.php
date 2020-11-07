@@ -25,14 +25,96 @@
 		<img class="ji" src="pics/jump.jpg" alt="Arrow pointing down, indicating Projects below">
 		<div class="wrapper">	
 			<ul>
-				<li><a href="projects.php?project=web#web"><img src="pics/web.png" alt="circular icon, symbol for web"><p>This Website</p></a></li>
-				<li><a href="projects.php?project=listen#listen"><img src="pics/listen.png" alt="circular icon, headphones"><p>Rubble Listening Device</p></a></li>
-				<li><a href="projects.php?project=saas#saas"><img src="pics/saas.png" alt="circular icon, sailboat"><p>Saas Sailing Inventory System</p></a></li>
-				<li><a href="projects.php?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>Software/Web Developer</p></a></li>
+				<li><a href="projects.aspx?project=eng#eng"><img src="pics/imedx.png" alt="circular icon, symbol for heart beat"><p>Software Engineer Experience</p></a></li>
+				<li><a href="projects.aspx?project=web#web"><img src="pics/web.png" alt="circular icon, symbol for web"><p>This Website</p></a></li>
+				<li><a href="projects.aspx?project=listen#listen"><img src="pics/listen.png" alt="circular icon, headphones"><p>Rubble Listening Device</p></a></li>
+				<li><a href="projects.aspx?project=saas#saas"><img src="pics/saas.png" alt="circular icon, sailboat"><p>Saas Sailing Inventory System</p></a></li>
+				<li><a href="projects.aspx?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>/Web Developer Experience</p></a></li>
 			</ul>
 		</div>
 	</div>
-	
+
+	<div class="project" id="eng">
+		<div class="container">
+			<h2>Software Engineer Experience</h2>
+			<h3>iMedX Inc. (June 2020 - November 2020)</h3>
+			
+			<h3><button class="accordion">Duties and Responsibilities</button></h3>
+			<div class="panel">
+				<p>&emsp;I was a member of the US development team hired to develop iMedX's Analytics platform. The company's main software is found in medical transcription, and the Analytics
+				platform is meant to improve the insight for healthcare clients into their billing and payment data. The existing analytics platform was written using the ASP.NET framework.
+				Plans were in place for this to be eventually replaced by a React frontend, however, this was still in development when COVID-19 financial difficulties came to a head
+				and this team was laid off and the supervisor reassigned. I was hired as an AI Software Engineer, with the goal of migration to using AWS tools and technologies to
+				implement Machine Learning models on client data for better analytics predictions for our clients, specifically regarding the patterns and predictions that relate to
+				clients' billing contracts with insurance companies. To this end, I was on a project to streamline our core databases and tables so they could be used in AWS "data lakes"
+				which could later be used as a basis for the aforementioned Machine Learning models.
+				
+				<br /><br />&emsp;HIPAA training was part of my onboarding training for this position, as my role as a Software Engineer involved handling patient Personal Health
+				Information, in some cases. While the bulk of our development and testing datasets had been previously de-identified, more robust datasets existed which had not
+				been de-identified, as that process would remove some of the information that features needed to be tested upon. The de-identifed data is used for development primarily
+				so that any accidental security issues made during development would not cause any possible compromise of PHI.
+					
+				<br><br>&emsp;Within this position, I had the opportunity to truly be a "full-stack" engineer, and was able work on portions of every aspect of the Analytics platform. 
+				I had tasks that ranged from updating schemas of the underlying SQL tables, to creating and modifying stored procedures on SQL servers, to creating API frameworks for 
+				different functions, to mid-level changes in the ASP.NET framework codebase, to making direct frontend experience changes. I also worked many tools while 
+				performing these tasks, such as SQL Server Profiler, Visual Studio's Schema Compare, working within a remote desktop environment within a VPN network, Atlasssian's Jira,
+				and Postman API Development Platform. 
+
+				<br><br>&emsp;One of my major projects during my employment at iMedX was the creation of an Alerts system which would trigger alerts to be created for different triggers.
+				These triggers would be checked each time that the dashboards which displayed the data relating to the alerts were refreshed. The call to the Alert Trigger stored procedure was
+				added to the SQL Server Agent job which did the rebuilding of the financial dashboards. The stored procedure is run for each of the "active" databases within both the Development
+				and Production servers. This procedure's parameters were the databasse name, the report type for which alerts are being created, and a list of the user roles for which the alert should
+				be created. The stored procedure first collected the relevant financial columns from each of the dashboard Reporting tables. This data was then aggregated into sums, and after being 
+				summed, the specific trigger-relevant rates were calculated. The string of user roles was split and used to compile a table column of usernames that would be recipients of any
+				triggered alerts. A cursor was created to insert an alert row into the Alerts table for each of those usernames for each of the triggered alerts. This cursor was then deallocated.
+				The next time one of that list of users logs into the Analytics portal, they would see new alerts corresponding to the ones created by this stored procedure.
+
+				<br /><br />&emsp;For the Alerts systems project, I created Entity Framework mappings and API calls so that the frontend application could interact with the underlying Alerts table on
+				the SQL Server. This allowed for the frontend to pull the alerts for the logged-in user, display and update the read/unread status of those alerts, and mark the alert "inactive". The
+				marking inactive was a soft delete, as that record would still be in the underlying table for record-keeping, but not displayed to the user.
+
+				<br /><br />&emsp;In this position, being self-motivated was a major advantage for my productivity, as the bulk of my work was self-paced and unsupervised due to being a mostly remote
+				position. The local development team met at the datacenter locally once a week for a few hours, in order to get some in-person meeting time and work together on tasks that were better
+				suited towards collaboration and pair programming rather than independent working.
+
+				</p>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+			
+			<h3><button class="accordion">Languages and Skills</button></h3>
+			<div class="panel">
+				<ul>
+					<li>ASP.NET Framework</li>
+					<li>C#</li>
+					<li>Visual Basic</li>
+					<li>SQL/T-SQL</li>
+					<li>SQL Server/SQL Server Management Studio</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>Source Control Techniques and Best Practices</li>
+					<li>Legacy Code Updates</li>
+					<li>Software Development and Design</li>
+					<li>SQL Stored Procedure, Table, and General Schema Design and Updates</li>
+					<li>Cooperation within a global team which was time-zone and continent separated</li>
+				</ul>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+	</div><!--End of Software Engineering Experience-->
+
 	<div class="project" id="web">
 		<div class="container">
             <h2>This Website!</h2>
@@ -90,7 +172,7 @@
 								<img src="pics/tools.png" alt="circular icon, git logo">
 								<p>GitHub Repo (Opens in New Tab)</p></a>
 						</li>
-						<li><a href="quiz.php">
+						<li><a href="quiz.aspx">
 							<img src="pics/question.png" alt="ciruclar icon, question mark">
 							<p>JavaScript Quiz Element</p></a>
 						</li>
@@ -107,6 +189,8 @@
 		</div>
 
 	</div><!--End of Website Project-->
+
+	
 	
 	<div class="project" id="listen">
 		<div class="container">
@@ -296,7 +380,7 @@
 	
 	<div class="project" id="dev">
 		<div class="container">
-			<h2>Software/Web Developer Experience</h2>
+			<h2>Web Developer Experience</h2>
 			<h3>Centennial Arts - (04/2019 - 09/2019)</h3>
 			
 			<h3><button class="accordion">Duties and Responsibilities</button></h3>

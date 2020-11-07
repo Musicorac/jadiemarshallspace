@@ -130,7 +130,7 @@
 				<br><br>&emsp;I used a small JavaScript function to remove the CSS formatting from text copied from the pages. This was annoying to me as I copied back and forth to work on the wording 
 				of various sections, as copying from the open site caused the background color to come with it. This script is activated on copy and replaces the clipboard data with plain text. This 
 				does not affect the HTML formatting, so things such as newlines, breaks, and tabs are not lost. This script only removes CSS formatting (text color, background color, size, and font 
-				family in this case), making copying and pasting across platforms much more streamlines.
+				family in this case), making copying and pasting across platforms much more streamlined.
 				<br><br>&emsp; Each of the icons utilized are created from the editing of Creative Commons licensed clipart or icons into those that are used on the site. These are manipulated using GIMP, 
 				a free, open-source alternative to Adobe Photoshop. Generally, a line art icon was selected, added over the mint green circle, and the line art either colored or made transparent, depending 
 				on the need for that icon.

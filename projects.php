@@ -29,7 +29,7 @@
 				<li><a href="projects.php?project=web#web"><img src="pics/web.png" alt="circular icon, symbol for web"><p>This Website</p></a></li>
 				<li><a href="projects.php?project=listen#listen"><img src="pics/listen.png" alt="circular icon, headphones"><p>Rubble Listening Device</p></a></li>
 				<li><a href="projects.php?project=saas#saas"><img src="pics/saas.png" alt="circular icon, sailboat"><p>Saas Sailing Inventory System</p></a></li>
-				<li><a href="projects.php?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>/Web Developer Experience</p></a></li>
+				<li><a href="projects.php?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>Web Developer Experience</p></a></li>
 			</ul>
 		</div>
 	</div>

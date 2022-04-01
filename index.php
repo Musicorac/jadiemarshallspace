@@ -20,9 +20,8 @@
 		<div class="info">
 			<div class="textwrapper">
 				<h1>Howdy!</h1>
-				<h3>My name is Jadie Marshall. I am a Software Engineer seeking a full-time position
-					in the Katy, Texas commutable area, or one which is fully remote. I am interested in improving
-					knowledge and skills in a variety of languages, tools, and technologies.
+				<h3>My name is Jadie Marshall. I am a Software Engineer seeking a fully remote, full-time position. <br>An ideal position would be one which has upward mobility and growth
+					both within the company, as well as in my overall career.
 				</h3>
 			</div>
 		</div>
@@ -48,7 +47,7 @@
 			<div class="textwrapper">
 				<h1>Languages</h1>
 				<h3>
-					Java &emsp; C++ &emsp; Python 
+					Java &emsp; C++/C# &emsp; Python 
 					<br><br>HTML & CSS  &emsp; JavaScript
 					<br><br>Ruby/Ruby on Rails &emsp; SQL &emsp; Verilog HDL
 				</h3>
@@ -64,7 +63,7 @@
 			<div class="textwrapper">
 				<h1>Tools</h1>
 				<h3>
-					Git/Github &emsp; SVN &emsp; MySQL &emsp; Mongo DB &emsp; Various IDEs
+					Git/Github &emsp; SVN &emsp; MySQL &emsp; Mongo DB &emsp; SQuirreL &emsp; WebSphere & Other IBM Tools
 				</h3>
 			</div>
 		</div>

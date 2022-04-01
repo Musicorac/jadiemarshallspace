@@ -25,18 +25,121 @@
 		<img class="ji" src="pics/jump.jpg" alt="Arrow pointing down, indicating Projects below">
 		<div class="wrapper">	
 			<ul>
-				<li><a href="projects.php?project=eng#eng"><img src="pics/imedx.png" alt="circular icon, symbol for heart beat"><p>Software Engineer Experience</p></a></li>
+				<li><a href="projects.php?project=eng#eng"><img src="pics/code.png" alt="circular icon, broken brackets"><p>Professional Experience</p></a></li>
 				<li><a href="projects.php?project=web#web"><img src="pics/web.png" alt="circular icon, symbol for web"><p>This Website</p></a></li>
 				<li><a href="projects.php?project=listen#listen"><img src="pics/listen.png" alt="circular icon, headphones"><p>Rubble Listening Device</p></a></li>
 				<li><a href="projects.php?project=saas#saas"><img src="pics/saas.png" alt="circular icon, sailboat"><p>Saas Sailing Inventory System</p></a></li>
-				<li><a href="projects.php?project=dev#dev"><img src="pics/code.png" alt="circular icon, broken brackets"><p>Web Developer Experience</p></a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="project" id="eng">
+		<h2>Professional Experience</h2>
 		<div class="container">
-			<h2>Software Engineer Experience</h2>
+			<h3>Pomeroy/IBM (January 2021 - Present)</h3>
+			
+			<h3><button class="accordion">Team Duties and Application Overview</button></h3>
+			<div class="panel">
+				<p>&emsp;I am currently a member of the US development team for the GPWS (Global Print Web System) applications. This team is responsible for several groups of applications 
+				under the "Print @ IBM" umbrella. 
+				<br /><br />&emsp;The main application is the main GPWS application. This application allows for administration of the Print @ IBM printer fleet. Some of the uses of this tool 
+				include MACD (Move, Add, Change, and Delete) operations on physical printers, administration of the VPSX servers that the printers are connected to, and administration of users 
+				and their privileges within the various GPWS-related tools.
+				<br /><br />&emsp;Secondary applications for the team are the Key User, Pager, Badge Registration, IVT (Invoice Verification Tools), and the Print @ IBM timekeeping system. 
+				<br /><br />&emsp;The Key User application is used by select administrators (i.e., Key Users) in the various IBM geographic locations. This tool is used to administer responsibilities
+				 and privileges within the Print @ IBM departments. These “responsibility groups” managed by the application include different team/department heads and members, as well as information 
+				 for contacting the various teams that are included.
+				 <br /><br />&emsp;The Pager tool is used to administer the paging system for the Print @ IBM teams. When a Severity 1 (highest level) issue comes up after-hours, this system can 
+				 be used to send text messages and emails to the person(s) currently on the schedule for that team/application. The online tool allows users to page team contacts, view and edit the 
+				 pager schedule, and add/edit contacts and their information.
+				 <br /><br />&emsp;The Badge Registration tool is used for those users who have physical building accesses and printing privileges within IBM. This tool can be used to register for 
+				 these privileges, or for an admin to remove access and privileges from an employee’s account with IBM.
+				 <br /><br />&emsp;The IVT (Invoice Verification Tool) is an accounting system used to verify the printing costs each month and quarter. Each geographic location that uses print 
+				 services internally with IBM is required to submit their printing cost invoices to this system. Within this system, some of the features for users include reviewing invoices, 
+				 viewing reports for various locations and/or timeframes, and reviewing the status of past/current invoices.
+				</p>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+				
+			</div>
+			
+			<h3><button class="accordion">Duties and Responsibilities</button></h3>
+			<div class="panel">
+				<p>&emsp;As a member of the GPWS team, I was the lead on an effort to clean up the SQL databases containing printer records. When devices are moved or deleted, their old records remain
+				 in the tables with their status as “deleted”. These records are retained for the purposes of recordkeeping between the various other systems that connect to the database on the IBM 
+				 side. However, these large number of records over time create significant processing times for the creation of reports for Print @ IBM management users. It was determined that the 
+				 large number of “deleted” records was a very large reason for the processing time. In this effort, it was determined that the devices would be removed that had been “deleted” prior to 
+				 2016, and whose records had not been edited since 2019.
+				<br /><br />&emsp;For this effort, I created several SQL commands to create one-time reports of the various records that would be deleted. First, I created commands to list all the 
+				devices that fit the criteria listed above. Once this list was created, I then created commands that would look at the other tables related to the physical device (these other tables 
+				include model and driver information, primarily) and determine if, once the old device records were deleted, the records in the related tables would no longer have any devices that 
+				were related. If the table would no longer have a device associated, that mode/driver/etc. could be deleted. These commands were run in the development, test, and production 
+				environments to create .CSV files for backup records, as well as have a report of all the records that would be deleted. SQL scripts were then written to delete all the database entries 
+				that were included in the cleanup. All efforts were made first in the development environment, then were moved onto the test and production environments once testing had been completed 
+				to ensure that the cleanup was successful.
+				<br /><br />&emsp;Another large project I have undertaken in my role on the GPWS team is the creation of extensive documentation for the installation and setup of the software and 
+				applications needed for the development environment. Previously, the only documentation that existed were piecemeal documents of small portions of this setup process, which were largely 
+				incomplete even for the portion covered. These documents also became partially obsolete with the migration of our applications from traditional internal servers to external cloud servers. 
+				What wasn’t in documentation either had to be relayed by older members (which quickly turns into a messy game of telephone as information is passed down) or re-learned by a new team member 
+				if that information is not remembered or written down.
+				<br /><br />&emsp;To this end, I compiled all the existing documentation into a single document. Then I began bringing the information up to date, as well as filling in the many gaps in 
+				the process that existed. Once this information was collected and fleshed out, I used this document to create a Wiki. This setup guide will allow current and future members to have a single 
+				source for setup documentation, as well as an environment where it is easy to update and add onto as the applications and environments change over time.
+				<br /><br />&emsp;Over the last year and a half, I have been involved in the IBM/Kyndryl split. Kyndryl was created by IBM to split off it’s GTS (Global Technology Services) into a 
+				separate publicly traded company. Some of the functions that were migrated into the Kyndryl space included functions that previously fell under the Print @ IBM umbrella. During this 
+				split, I was involved in various planning sessions, meetings about logistics, and work to make sure that services moving to Kyndryl were moving with all the related services the teams 
+				needed to function independently of IBM, as well as make sure that the split happened as smoothly as possible. My role in this split was minor, as the only thing that affected GPWS 
+				directly was in our role maintaining the Print @ IBM timekeeping system. During the migration period, timekeeping between IBM and Kyndryl was a little messy and the GPWS team assisted 
+				in allowing employees who were moving over to Kyndryl to still record their hours and show what hours would be IBM or Kyndryl’s responsibility. In the overall effort, GPWS was involved 
+				in advising leadership of what services were necessary for the main functions expected to migrate to Kyndryl.
+				<br /><br />&emsp;The Print @ IBM department is fully remote. Team members are spread throughout the US and worldwide, with most of our international teams located in India. This means 
+				that as a member of the Print @ IBM department, I have been given the opportunity to collaborate with developers, vendors, and other IBM employees worldwide.
+				
+				
+				<br /><br />&emsp;
+
+				</p>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+			
+			<h3><button class="accordion">Languages and Skills</button></h3>
+			<div class="panel">
+				<ul>
+					<li>Java</li>
+					<li>SQL</li>
+					<li>DB2</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>WebSphere and other IBM-Specific technologies</li>
+					<li>SQuirreL and other SQL Clients</li>
+					<li>Source Control Techniques and Best Practices</li>
+					<li>Legacy Code Updates</li>
+					<li>Software Development and Design</li>
+					<li>Cooperation within a global team which was time-zone and continent separated</li>
+				</ul>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="line"></div>
+		
+		<div class="container">
 			<h3>iMedX Inc. (June 2020 - November 2020)</h3>
 			
 			<h3><button class="accordion">Duties and Responsibilities</button></h3>
@@ -113,7 +216,72 @@
 			</div>
 			
 		</div>
+		
+		<div class="line"></div>
+		
+		<div class="container">
+			<h3>Centennial Arts (June 2019 - September 2019)</h3>
+			
+			<h3><button class="accordion">Duties and Responsibilities</button></h3>
+			<div class="panel">
+				<p>&emsp;I developed software elements for use on customer websites, where I was responsible for creating new elements, bringing older elements into current standards, 
+				and improving/documenting standards for use in the company's proprietary software. This software was similar to Adobe Dreamweaver, but the company's founder was 
+				looking for things in an editor that weren't given by Dreamweaver, so he wrote his own. This software was run in a web portal on the company's internal software. 
+				I was also responsible for meeting with the marketing and ad campaign staff members to ensure the website work that I was completing met all client needs and 
+				expectations, as well as being ad campaign consistent and SEO-friendly. 
+				<br><br>&emsp;These elements used HTML, CSS, JavaScript, and some PHP. The previous developer had hardcoded values into many elements, rather than leaving them 
+				templated and letting the theme decide those values such as font family, text size, and text color. I would create new templated elements, removing these hardcoded 
+				values and updating the HTML and CSS to the newest HTML5 and CSS3 standards. Within these older "bad" elements, many times CSS was contained in inline HTML rather 
+				than being separated into its own file. This created problems if someone went to reuse an element with these inline formatting options, as inline formatting overrules any CSS file. 
+				<br><br>&emsp;Another common problem was in the previous developer's usage of jQuery. Rather than referencing the server's jQuery library or even the online URL 
+				to access jQuery, the developer would fill a JavaScript file with a "screenshot" of jQuery. This code hack would run the jQuery for that one element, but if you 
+				tried to use that "screenshot" in a new copy for updating the element, it would no longer work. This code hack was extremely odd, and part of my responsibilities 
+				became searching down elements using this tactic once it was discovered, as this is very out of industry standards and could introduce many issues. Ensuring this 
+				was removed from production on any customer websites was one of my top priorities.
+				<br><br>&emsp;Along with the creation of elements, I created CSS "themes" for use on websites that would handle the overall theme for a site. This included things such 
+				as fonts, font sizes for different types of text, link text decoration, etc. Once this theme was created, it would apply over the top of the website containing templated 
+				elements. These elements were created as templates so they would be reusable on any customer website, rather than re-creating elements every time they were needed. The 
+				theme of the website was mostly decided by the client, with input from the web development team to ensure that the client is satisfied while also maintaining design standards and practices.
+				<br><br>&emsp;The editor enforced certain standards in HTML, CSS, and JavaScript. One of the main functions of this was to restrict what CSS rules could be used, as 
+				there are countless code hacks that can be done to manipulate formatting that do not fall into current (or any) standards. As I worked, things had been added to standards 
+				or had not yet been added to the editor's standard enforcement. As these came up, I would be responsible for documenting the new standards in the internal system, then 
+				implementing the inclusion of that rule in the editor's backend.
+				</p>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+			
+			<h3><button class="accordion">Languages and Skills</button></h3>
+			<div class="panel">
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>PHP</li>
+					<li>Client Meetings and Negotiations</li>
+					<li>SEO Techniques and Best Practices</li>
+					<li>Legacy Code Updates</li>
+					<li>Web Development and Design</li>
+				</ul>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		
 	</div><!--End of Software Engineering Experience-->
+	
+
+
 
 	<div class="project" id="web">
 		<div class="container">
@@ -125,13 +293,13 @@
 				as well as being cross-browser and mobile-friendly. Using the XAMPP software, which allows running an Apache web server on localhost, I tested for compatibility across 
 				Google Chrome, Firefox, Safari, Microsoft Edge, and Internet Explorer. 
 				<br><br>&emsp;Hand-coding this site allowed me to truly manipulate elements and their responses as I desired, rather than using a platform such as Wix or WordPress to manipulate 
-				a platform’s limited selection of options and possibilities. The exception to this site being entirely written by me is the image gallery element used in this "Projects" page. 
+				a platform's limited selection of options and possibilities. The exception to this site being entirely written by me is the image gallery element used in this "Projects" page. 
 				This element utilizes the Flexslider 2 jQuery plugin written by WooCommerce.
 				<br><br>&emsp;I used a small JavaScript function to remove the CSS formatting from text copied from the pages. This was annoying to me as I copied back and forth to work on the wording 
 				of various sections, as copying from the open site caused the background color to come with it. This script is activated on copy and replaces the clipboard data with plain text. This 
 				does not affect the HTML formatting, so things such as newlines, breaks, and tabs are not lost. This script only removes CSS formatting (text color, background color, size, and font 
 				family in this case), making copying and pasting across platforms much more streamlined.
-				<br><br>&emsp; Each of the icons utilized are created from the editing of Creative Commons licensed clipart or icons into those that are used on the site. These are manipulated using GIMP, 
+				<br><br>&emsp;Each of the icons utilized are created from the editing of Creative Commons licensed clipart or icons into those that are used on the site. These are manipulated using GIMP, 
 				a free, open-source alternative to Adobe Photoshop. Generally, a line art icon was selected, added over the mint green circle, and the line art either colored or made transparent, depending 
 				on the need for that icon.
 				<br><br>&emsp;Additionally, I recreated this website as an ASP.NET web application. However, as my chosen domain hosting service, Hostsinger, is a Linux-based service, it is not supported
@@ -175,7 +343,7 @@
 								<p>GitHub Repo (Opens in New Tab)</p></a>
 						</li>
 						<li><a href="https://dev.azure.com/jadiemarshall/PortfolioProject" target="_blank">
-								<img src="pics/repo.png" alt="circular icon, generic source control logo"
+								<img src="pics/repo.png" alt="circular icon, generic source control logo">
 								<p>Azure ASP.NET Repo (Opens in New Tab)</p></a>
 						</li>
 						<li><a href="quiz.php">
@@ -196,8 +364,6 @@
 
 	</div><!--End of Website Project-->
 
-	
-	
 	<div class="project" id="listen">
 		<div class="container">
 			<h2>Rubble Listening Device</h2>
@@ -230,10 +396,10 @@
 					unsafe to send humans into, getting networks set up in the aftermath for relief workers to communicate using, and implementing new 
 					technologies that improve disaster response, for example. 
 					<br><br>&emsp;The class was presented with a list of projects that she and her team saw a need for in their experiences in these disaster 
-					response situations. Students then “bid” upon projects that interested them or that they could best contribute to as a team member, outlining 
+					response situations. Students then "bid" upon projects that interested them or that they could best contribute to as a team member, outlining 
 					what that person could bring to the team. My team was tasked with the creation of a device to "hear" survivors trapped under rubble. A very common 
 					experience with survivors who are rescued from underneath rubble is that the survivor was yelling or banging on something, but nobody on the surface could hear them.
-					<br><br>&emsp; The project requirements were: the device must be self-contained and self-reliant (many disaster situations have limited to no 
+					<br><br>&emsp;â€ƒThe project requirements were: the device must be self-contained and self-reliant (many disaster situations have limited to no 
 					wireless networks on which to rely on), the device must be able to be operated and handled by someone wearing "bunker gear" or similar 
 					movement-restricting gear, the device must record for 5 minutes, then wait a user-selected interval before the next recording, and the device 
 					must be able to last 12 hours on a single charge. 
@@ -250,7 +416,7 @@
 					recording for the next five minutes to hear them and find them, and that they should shout or bang on metal after the message ended. The device would then commence its cycle 
 					of recording and waiting, until the toggle switch was flipped, the SD card was filled, or the battery ran out. The pre-recorded message would play each time before recording audio. 
 					Powering off the device while it was recording, or processing audio would cause the loss of that stage of the recording but would not cause a process lock to be active upon the 
-					device’s next power up.
+					device's next power up.
 					<br><br>&emsp;After the device was retrieved from the site, an SD card with the recordings could then be removed. This SD card would then be inserted into a compatible device, 
 					and human eyes and ears would be necessary to find the "spikes" in the audio files, listen to these, and determine if this spike was the result of a survivor, or just an anomaly 
 					in the overall noise of the disaster site.
@@ -332,11 +498,11 @@
 					web portal written using HTML, CSS, JavaScript, and PHP. The project was deployed to Heroku using their Git-linked deployment terminal- based toolkit.
 					<br><br>&emsp;Our key features were: keeping track of inventory items and their status, adding, removing, and editing items to the database, sort the table on the web portal 
 					side, having an Admin and Member views (so that Sailing team sponsors and officers were able to have more control over the inventory system than regular members), reporting 
-					broken or missing items, and an email Admin notification system.   Our biggest struggle was in the email notification system. We were using an API for this purpose, but during 
+					broken or missing items, and an email Admin notification system. â€ƒ Our biggest struggle was in the email notification system. We were using an API for this purpose, but during 
 					our testing, our automated test cases caused the API source to put a hold on the account for "suspicious activity". This was resolved, after contact with the API dev team.
 					<br><br>&emsp;We restricted user signup to only allowing a new user to sign up as a member. Admin users have access to user management and can promote and demote users between 
 					Admin and Member status. This does introduce a potential security issue in that there is no safeguard against a "troll" account demoting all Admin users but themselves. 
-					This security flaw was stressed to our client, making clear that adding any Admin users should be done with extreme caution and the Admin “team” verifying that new account’s 
+					This security flaw was stressed to our client, making clear that adding any Admin users should be done with extreme caution and the Admin "team" verifying that new account's 
 					information with the person they are promoting. Future work on this project would focus on patching this security hole first.
 					<br><br>&emsp;The team utilized GitHub for source management. As team members contributed to the development of features, we would each create a fork off the main project for 
 					each feature added. Testing and development were done on virtual machines, team members using a mix of Cloud9, AWS, and Windows Hyper-V virtual machines running Ubuntu. 
@@ -384,67 +550,6 @@
 		</div>
 	</div> <!--End of SAAS Project-->
 	
-	<div class="project" id="dev">
-		<div class="container">
-			<h2>Web Developer Experience</h2>
-			<h3>Centennial Arts - (04/2019 - 09/2019)</h3>
-			
-			<h3><button class="accordion">Duties and Responsibilities</button></h3>
-			<div class="panel">
-				<p>&emsp;I developed software elements for use on customer websites, where I was responsible for creating new elements, bringing older elements into current standards, 
-				and improving/documenting standards for use in the company’s proprietary software. This software was similar to Adobe Dreamweaver, but the company’s founder was 
-				looking for things in an editor that weren’t given by Dreamweaver, so he wrote his own. This software was run in a web portal on the company’s internal software. 
-				I was also responsible for meeting with the marketing and ad campaign staff members to ensure the website work that I was completing met all client needs and 
-				expectations, as well as being ad campaign consistent and SEO-friendly. 
-				<br><br>&emsp;These elements used HTML, CSS, JavaScript, and some PHP. The previous developer had hardcoded values into many elements, rather than leaving them 
-				templated and letting the theme decide those values such as font family, text size, and text color. I would create new templated elements, removing these hardcoded 
-				values and updating the HTML and CSS to the newest HTML5 and CSS3 standards. Within these older “bad” elements, many times CSS was contained in inline HTML rather 
-				than being separated into its own file. This created problems if someone went to reuse an element with these inline formatting options, as inline formatting overrules any CSS file. 
-				<br><br>&emsp;Another common problem was in the previous developer’s usage of jQuery. Rather than referencing the server’s jQuery library or even the online URL 
-				to access jQuery, the developer would fill a JavaScript file with a “screenshot” of jQuery. This code hack would run the jQuery for that one element, but if you 
-				tried to use that “screenshot” in a new copy for updating the element, it would no longer work. This code hack was extremely odd, and part of my responsibilities 
-				became searching down elements using this tactic once it was discovered, as this is very out of industry standards and could introduce many issues. Ensuring this 
-				was removed from production on any customer websites was one of my top priorities.
-				<br><br>&emsp;Along with the creation of elements, I created CSS “themes” for use on websites that would handle the overall theme for a site. This included things such 
-				as fonts, font sizes for different types of text, link text decoration, etc. Once this theme was created, it would apply over the top of the website containing templated 
-				elements. These elements were created as templates so they would be reusable on any customer website, rather than re-creating elements every time they were needed. The 
-				theme of the website was mostly decided by the client, with input from the web development team to ensure that the client is satisfied while also maintaining design standards and practices.
-				<br><br>&emsp;The editor enforced certain standards in HTML, CSS, and JavaScript. One of the main functions of this was to restrict what CSS rules could be used, as 
-				there are countless code hacks that can be done to manipulate formatting that do not fall into current (or any) standards. As I worked, things had been added to standards 
-				or had not yet been added to the editor’s standard enforcement. As these came up, I would be responsible for documenting the new standards in the internal system, then 
-				implementing the inclusion of that rule in the editor’s backend.
-				</p>
-				<div class="up">
-					<a href="#top">
-						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
-						<div class="uTxt">Jump to Top</div>
-					</a>
-				</div>
-			</div>
-			
-			<h3><button class="accordion">Languages and Skills</button></h3>
-			<div class="panel">
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>JavaScript</li>
-					<li>jQuery</li>
-					<li>PHP</li>
-					<li>Client Meetings and Negotiations</li>
-					<li>SEO Techniques and Best Practices</li>
-					<li>Legacy Code Updates</li>
-					<li>Web Development and Design</li>
-				</ul>
-				<div class="up">
-					<a href="#top">
-						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
-						<div class="uTxt">Jump to Top</div>
-					</a>
-				</div>
-			</div>
-			
-		</div>
-	</div>
 	
 </div>
 <footer>

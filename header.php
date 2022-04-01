@@ -17,7 +17,7 @@
 		  <div class="text">Projects</div>
 		</div>
 	  </a> </li>
-	<li class="icon"> <a href="Marshall_Jadie_2020ResumeUpdated.pdf" target="_blank">
+	<li class="icon"> <a href="Marshall_Jadie_Resume_2022.pdf" target="_blank">
 		<img src="pics/resume.png" alt="Resume icon, outline of a document.">
 		<div class="overlay">
 		  <div class="text">Resume</div>

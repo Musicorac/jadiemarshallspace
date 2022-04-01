@@ -311,6 +311,7 @@ header li {
 
 .project {
 	display:none;
+	text-align: center;
 }
 
 .project:last-of-type {
@@ -358,6 +359,11 @@ header li {
 .active, .accordion:hover {
   filter: invert(10%);
 
+}
+
+.line {
+	border-bottom: 5px solid;
+	margin: 20px 0px 100px 0px;
 }
 
 /* Style the accordion panel. Note: hidden by default */

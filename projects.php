@@ -96,6 +96,16 @@
 				directly was in our role maintaining the Print @ IBM timekeeping system. During the migration period, timekeeping between IBM and Kyndryl was a little messy and the GPWS team assisted 
 				in allowing employees who were moving over to Kyndryl to still record their hours and show what hours would be IBM or Kyndryl’s responsibility. In the overall effort, GPWS was involved 
 				in advising leadership of what services were necessary for the main functions expected to migrate to Kyndryl.
+				<br /><br />&emsp;During the second half of 2021, following the Kyndryl split, there was an initiative to refresh printer devices worldwide. This refresh included verification of devices
+				at the various IBM sites globally. With this verification, there would be a large number of devices whose records would be updated, and many would be deleted from the current fleet. After
+				device verification, the remaining active devices would be assigned to one of two new cloud-based IBM servers, from their various worldwide traditional servers. The new servers would each 
+				serve a distinct geographical area. The first would serve the EMEA (Europe, Middle East, and Africa) geographical location, and the second would serve the Americas as well as Asia Pacific 
+				countries. For these new cloud-based servers, my team and I needed to make sure that our applications and databases were up and running before any devices could have their server assignments 
+				updated. After this was completed, the various administrator-level users, known as Key Users, would be able to update each device under their responsibility group to use these new servers.
+				<br /><br />&emsp;For these new servers, an update was needed to the logic that drives the server assignment when a print device is added or moved. The old logic included hard-coded values,
+				which is a big problem when attempting to make an application more "future-proof". I was responsible for creating new queries into our database that would correctly assign these devices, 
+				without the use of any hard-coded values that would cause more work again in the future if any of the server data would be updated. These new queries are much more future-proof and will
+				still correctly assign a device to a server, even if the servers in the future are updated once more.
 				<br /><br />&emsp;The Print @ IBM department is fully remote. Team members are spread throughout the US and worldwide, with most of our international teams located in India. This means 
 				that as a member of the Print @ IBM department, I have been given the opportunity to collaborate with developers, vendors, and other IBM employees worldwide.
 				

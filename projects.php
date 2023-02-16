@@ -498,9 +498,6 @@
 						</ul>
 					</div>
 				</div>
-				<form target="_blank">
-					<h3><button class="accordion" type="submit" formaction="https://dry-island-56062.herokuapp.com/">Inventory Systems Demo (Opens in New Tab)</button></h3>
-				</form>
 				
 			<h3><button class="accordion">Project Description</button></h3>
 			<div class="panel">

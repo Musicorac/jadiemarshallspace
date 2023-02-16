@@ -305,14 +305,19 @@
 				<br><br>&emsp;Hand-coding this site allowed me to truly manipulate elements and their responses as I desired, rather than using a platform such as Wix or WordPress to manipulate 
 				a platform's limited selection of options and possibilities. The exception to this site being entirely written by me is the image gallery element used in this "Projects" page. 
 				This element utilizes the Flexslider 2 jQuery plugin written by WooCommerce.
-				<br><br>&emsp;I used a small JavaScript function to remove the CSS formatting from text copied from the pages. This was annoying to me as I copied back and forth to work on the wording 
-				of various sections, as copying from the open site caused the background color to come with it. This script is activated on copy and replaces the clipboard data with plain text. This 
+				<br><br>&emsp;The source code for this website can be found in the GitHub repository linked in the "More Examples" tab below this section. This repo includes a webhook that triggers
+				the Hostsinger hosting service to re-deploy my website upon each commit to the main branch. Utilizing this webhook means that any update to the site is available virtually instantly
+				on the live version of the site, as deploying the site takes fractions of a second due to the fact there is no real compilation that needs to occur in order to deploy. Utilizing GitHub
+				for this website source allows me to maintain a change history. While for this type of personal project, a change history may not be the most useful tool, it is very good practice to 
+				have a solid habit of maintaining, so that for workplace projects the GitHub process is second nature.
+				<br><br>&emsp;I used a small JavaScript function to remove the CSS formatting from text copied from the pages. I discovered that as I copied back and forth to work on the wording 
+				of various sections, copying from the site caused the background color to come with it. This script is activated on copy and replaces the clipboard data with plain text. This 
 				does not affect the HTML formatting, so things such as newlines, breaks, and tabs are not lost. This script only removes CSS formatting (text color, background color, size, and font 
 				family in this case), making copying and pasting across platforms much more streamlined.
 				<br><br>&emsp;Each of the icons utilized are created from the editing of Creative Commons licensed clipart or icons into those that are used on the site. These are manipulated using GIMP, 
 				a free, open-source alternative to Adobe Photoshop. Generally, a line art icon was selected, added over the mint green circle, and the line art either colored or made transparent, depending 
 				on the need for that icon.
-				<br><br>&emsp;Additionally, I recreated this website as an ASP.NET web application. However, as my chosen domain hosting service, Hostsinger, is a Linux-based service, it is not supported
+				<br><br>&emsp;Additionally, I recreated an earlier version of this website as an ASP.NET web application. However, as my chosen domain hosting service, Hostsinger, is a Linux-based service, it is not supported
 				for hosting a Windows-based framework application. However, you can find my Azure repository containing this project under the "More Examples" dropdown in this section.
 				</p>
 				<div class="up">

@@ -9,8 +9,8 @@ body {
 	margin: auto;
 	min-height: 100vh;
 	position:relative;
-	color: #656565;
-	background: url("pics/geometric-leaves.png") repeat #b87e7e;
+	color: #0D2A29;
+	background: url("pics/always-grey.png") repeat #A7BABA;
  	font-family: "Courier New";
 	font-size: 1.75rem;
 }
@@ -19,9 +19,7 @@ html {
 background: transparent !important;
 
 }
-head {
-	
-}
+
 .body {
 	width: 100%;
 	margin: auto;
@@ -53,7 +51,7 @@ p {
 }
 a {
 	font-family: "Montserrat";
-	color: #656565;
+	color: #0D2A29;
 
 }
 path {
@@ -98,15 +96,15 @@ img {
 /* --------------- Header Style --------------- */
 header {
 	display: flex;
-	border-bottom: 5px solid #aaf0d1;
-	background-color: #656565;
+	border-bottom: 5px solid #fff;
+	background-color: #004C4C;
 	max-width: unset;
 	margin: auto;
 }
 
 nav {
 	width: 100%;
-	background-color: #656565;
+	background-color: #004C4C;
 	display: inline-block;
 	max-width: 1980px;
 	margin: auto;
@@ -135,7 +133,7 @@ header li {
 	height: 100px;
 	width: 100px;
 	opacity: 0;
-	background-color: #aaf0d1;
+	background-color: #fff;
 	border-radius: 50%;
 
 }
@@ -153,7 +151,7 @@ header li {
 
 .text {
 	text-decoration: none;
-	color: #656565;
+	color: #004C4C;
 	font-size: 20px;
 	text-align: center;
 	line-height: 100px;
@@ -164,7 +162,7 @@ header li {
 	justify-content: center;
 	width: 33%;
 	height: 100%;
-	border-right: 5px solid #aaf0d1;
+	border-right: 5px solid #fff;
 	padding: 20px 0px;
 	text-align: center;
 	padding: 18px 0px;
@@ -191,14 +189,10 @@ header li {
 	}
 	.text {
 		line-height: 75px;
-		font-size: 20px;
+		font-size: 15px;
 	}	
 }
 
-@-moz-document url-prefix() {
-	.first {
-	}
-}
 
  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
 	.first {
@@ -210,9 +204,6 @@ header li {
 }
 
 /* -------------- Home Page Style -------------- */
-
-.wrapper {
-}
 
 .twoup {
 	display: inline-block;
@@ -322,30 +313,14 @@ header li {
 	padding: 0px 25px;
 }
 
-.over {
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	color: #656565;
-	text-decoration: none;
-}
 
-.demo {
-	padding: 25px;
-	width: 85%;
-	color: #656565;
-	font-size: 24px;
-	background-color: #aaf0d1;
-	border-radius: 10px;
-
-}
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
 	padding: 25px;
 	width: calc(100% - 50px);
-	color: #656565;
+	color: #fff;
 	font-size: 2rem;
-	background-color: #aaf0d1;
+	background-color: #004C4C;
 	border-radius: 10px;
 	cursor: pointer;
 	display: table-cell;
@@ -622,9 +597,9 @@ header li {
 .contactbutton {
 	padding: 25px;
 	width: calc(100% - 50px);
-	color: #656565;
+	color: #fff;
 	font-size: 2rem;
-	background-color: #aaf0d1;
+	background-color: #004C4C;
 	border-radius: 10px;
 	cursor: pointer;
 	display: table-cell;
@@ -688,8 +663,8 @@ header li {
 	width: 20%;
 	height: 100%;
 	margin: 0px 20px;
-	color: #656565;
-	font-size: 1.5rem;	background-color: #aaf0d1;
+	color: #fff;
+	font-size: 1.5rem;	background-color: #004C4C;
 	border-radius: 10px;
 	cursor: pointer;
 	display: table-cell;
@@ -707,10 +682,6 @@ header li {
 	padding: 25px 0px;
 }
 
-.grid .accordion {
-	
-}
-
 @media only screen and (max-width: 1199px) {
 	.answers button {
 		width: 80%;
@@ -724,12 +695,12 @@ header li {
 
 footer {
 	width: 100%;
-	border-top: 5px solid #aaf0d1;
+	border-top: 5px solid #fff;
 	display: flex;
 	position: absolute;
 	bottom: 0;
-	background-color: #656565;
-	color: #DBDBDB;
+	background-color: #004C4C;
+	color: #fff;
 	height: 150px;
 }
 footer ul {

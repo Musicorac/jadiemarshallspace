@@ -14,7 +14,7 @@
 	  </a> </li>
 	<li class="icon"> <a href="projects.php"> <img src="pics/work.png" alt="Projects icon, outline of a briefcase.">
 		<div class="overlay">
-		  <div class="text">Projects</div>
+		  <div class="text">Experience</div>
 		</div>
 	  </a> </li>
 	<li class="icon"> <a href="Marshall_Jadie_Resume_2023.pdf" target="_blank">

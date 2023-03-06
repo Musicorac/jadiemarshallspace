@@ -38,6 +38,19 @@
 				</div>
 			</div>
 		</div>
+		<div class="contact">
+		<div class="cIcon"><img src="pics/calendar.png" alt="Calendar icon, outline of a calendar."></div>
+		<div class="cInfo"><div class="wrapper"><h3>Schedule a 30-minute call with me!</h3></div></div>
+	</div>
+		<div class="cButton">
+			<div class="cwrap">
+				<div class="bwrap">
+					<form method="POST" action="https://calendly.com/jadiemarshall/30min" target="_blank">
+						<button class="contactbutton" type="submit" title="https://calendly.com/jadiemarshall/30min">Schedule a Call!</button>
+					</form>
+				</div>
+			</div>
+		</div>
 </div>
 <footer>
 	<?php include 'footer.php';?>

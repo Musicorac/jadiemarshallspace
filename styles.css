@@ -565,6 +565,7 @@ header li {
 	text-align: center;
 }
 
+
 .cInfo .wrapper {
 	display: table;
 	vertical-align: middle;
@@ -605,6 +606,7 @@ header li {
 	display: table-cell;
 	vertical-align: middle;
 	border: none;
+	margin-bottom: 25px;
 }
 
 @media only screen and (max-width: 1199px) {

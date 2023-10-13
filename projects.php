@@ -35,12 +35,122 @@
 
 	<div class="project" id="eng">
 		<h2>Professional Experience</h2>
+
 		<div class="container">
-			<h3>Pomeroy/IBM (January 2021 - Present)</h3>
+			<h3>CAP Index, Inc. (April 2023 - October 2023)</h3>
+
+			<h3><button class="accordion">Team Duties and Application Overview</button></h3>
+			<div class="panel">
+				<p>
+					&emsp;I was a member of the CAP Index Development team. CAP Index is a fully-remote workplace, with most of the employees based around the Philadelphia metro area.
+					This team works directly with clients, as well as cross-departmentally with internal CAP Index Analytics and Marketing teams. CAP Index has created a scoring system for 
+					retail locations. This score, known as a CAP Score, indicates the level of crime that is present at a location and in the surrounding area. The Analytics team works with 
+					various crime data resources, including police data and a multitude of third-party providers, to create the most comprehensive data pool possible. This score is then used 
+					by clients to determine many factors related to security, such as where to open a new potential store location or how much a client should invest in security measures 
+					for an existing location. Within this team, I was primarily assigned to work with the applications that CAP Index supports for Walmart and Mcdonald's. These applications 
+					are used by clients for their internal security tracking, including tracking of security surveys and event reports. I was also working with the main CRIMECAST application, 
+					which is used both internally and by clients. All of these applications are .NET based applications, hosted by Microsoft Azure.
+					<br /><br />&emsp;CAP Index utilizes Agile philosophies in their development lifecycle. During my time with the team, the team utilized a two-week sprint cycle. Every 
+					other week an afternoon was reserved for Sprint Planning, where tasks were taken off the backlog, assigned to the sprint, and assigned story points. This process also 
+					discussed acceptance criteria for stories and tasks. For story points, the team utilizes a Fibonacci pointing system (1, 2, 3, 5, 8, 13, etc.), with stories that are 13 
+					points or higher are almost exclusively broken down into their parts to create more manageable-sized stories and tasks. After the team effort of planning and the team leads 
+					have assigned out tasks, the rest of the Sprint Planning time is used by each team member to go through the tasks they have been assigned to estimate hours, plan out subtasks, 
+					and ask for clarification or for any additional support needed for any story or task. During a sprint, the team has daily SCRUM meetings. These meetings are for each member to 
+					briefly discuss progress made the last 24 hours, the plan for the upcoming day, and bring up any problems they may be facing in their assigned tasks.
+					<br /><br />&emsp;Due to client confidentiality and the necessary consideration given to both CAP Index and their clients, I will only be discussing the most top-level features 
+					of the applications and will not be delving into high detail or revealing any proprietary information from either CAP Index or any clients that they work with. 
+					<br /><br />&emsp;The Walmart client application is used internally by Walmart employees across many facets of the company. The application supports features that include: 
+					requests for various types of security measures, reporting of security-related events, report creation on various topics related to security measures and incidents, 
+					record keeping of the various forms and reports, and management of users who are authorized to use the application.
+					<br /><br />&emsp;CAP Index supports two different applications for Mcdonald's: one is used by corporate-owned locations and the other is used by franchised owner-operator 
+					locations. These applications serve a similar function to the application in the Walmart space, with variations that are specific to the needs of a restaurant compared to 
+					a retail location.
+					<br /><br />&emsp;The CRIMECAST system and application is the flagship application created and supported by CAP Index. This application is used by both external clients and 
+					internal employees. The system allows for purchase and viewing of CAP Score Reports for a location, viewing crime data heat maps created by the CAP Scores and CRIMECAST data, 
+					and for internal CAP Index employees to manage the reports and users of the CRIMECAST system.
+				</p>
+
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+
+			<h3><button class="accordion">Individual Duties and Responsibilities</button></h3>
+			<div class="panel">
+				<p>
+					&emsp;The main application to which I was assigned was the Walmart application. Within my role, I was involved in the migration of version control measures from 
+					TFS into Git. This transition also included discussions on best Git practices, which I was able to meaningfully contribute due to my previous work and school
+					experiences using Git and staying up-to-date on the use and evolving practices. While completing various tasks assigned to me, I was also active in cleaning up 
+					any inline style or script elements. These elements belong in their own CSS or JavaScript files, with the exception of a few JavaScript functions which directly
+					interact with server-side variables. I was also responsible for making many small changes within the application, including things such as logic that made certain 
+					options in a multiple-choice request form exclusive to each other, as they could not exist in the same context together.
+					<br /><br/>&emsp;One of the projects I was involved with in the Walmart application was improving the flow of the creation of the various 
+					reports. Some of these reports pull from a large amount of data that is stored in the backend SQL databases. Due to this, some of the report creation methods 
+					take minutes, rather than seconds, to complete. In these cases, it was decided that a message should be displayed to the user that the report creation has been 
+					queued, and that they will receive an email once that report is available for view. For my tasks in this process, I moved the report creation logic to the internal 
+					Queued Task project for the client, which runs concurrently with the main application. This Queued Task application handles the processing of longer-running methods 
+					which need to be run in the background, rather than causing the front-end application to appear to "hang" for a user while that function runs. These tasks which move 
+					the report generation to a Queued Task involved creating or modifying the logic to run as a Queued Task rather than an on-demand one, as well as the modifications to 
+					the report generation database records, so that the report generation would be referencing the new Queued Task logic rather than the retired on-demand logic.
+					<br /><br />&emsp;Within the Mcdonald's applications, the tasks which I was assigned were mostly small maintenance tasks such as verbiage updates. My role with this 
+					application's development was that I should have an idea of the function and design of the application, but I was not one of the main developers who were most active in
+					most of the assigned work.
+					<br /><br />Within the CRIMECAST application, the main project which I completed was the ability for an internal CAP Index Admin-level user to mark all accounts within the 
+					system as "Under Maintenance" so that applications updates or data refreshes could be done. Then once any maintenance work was completed, the Admin-level user could then 
+					bring all of the accounts back out of the "Under Maintenance" status and back to normal functioning. I also completed several small maintenance tasks during my time working 
+					with CAP Index, such as improvements to the UI for purchasing a new report.
+				</p>
+
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+
+			<h3><button class="accordion">Languages, Technologies, and Skills</button></h3>
+			<div class="panel">
+				<ul>
+					<li>C#</li>
+					<li>.NET</li>
+					<li>Entity Framework</li>
+					<li>SQL</li>
+					<li>SQL Server Management Studio</li>
+					<li>LinqPad</li>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>TFS</li>
+					<li>Git</li>
+					<li>Visual Studio</li>
+					<li>Jira</li>
+					<li>Agile Methodology</li>
+					<li>Source Control Techniques and Best Practices</li>
+					<li>Legacy Code Updates</li>
+					<li>Software Development and Design</li>
+					<li>Cooperation within a fully-remote team which was time-zone and continent separated</li>
+				</ul>
+				<div class="up">
+					<a href="#top">
+						<img src="pics/up.png" title="Jump to top" alt="Jump to top">
+						<div class="uTxt">Jump to Top</div>
+					</a>
+				</div>
+			</div>
+		</div>	
+
+		<div class="line"></div>
+
+		<div class="container">
+			<h3>Pomeroy/IBM (January 2021 - March 2023)</h3>
 			
 			<h3><button class="accordion">Team Duties and Application Overview</button></h3>
 			<div class="panel">
-				<p>&emsp;I am currently a member of the US development team for the GPWS (Global Print Web System) applications. This team is responsible for several groups of applications 
+				<p>&emsp;I was a member of the US development team for the GPWS (Global Print Web System) applications. This team is responsible for several groups of applications 
 				under the "Print @ IBM" umbrella. 
 				<br /><br />&emsp;The main application is the main GPWS application. This application allows for administration of the Print @ IBM printer fleet. Some of the uses of this tool 
 				include MACD (Move, Add, Change, and Delete) operations on physical printers, administration of the VPSX servers that the printers are connected to, and administration of users 
@@ -64,10 +174,9 @@
 						<div class="uTxt">Jump to Top</div>
 					</a>
 				</div>
-				
 			</div>
 			
-			<h3><button class="accordion">Duties and Responsibilities</button></h3>
+			<h3><button class="accordion">Individual Duties and Responsibilities</button></h3>
 			<div class="panel">
 				<p>&emsp;As a member of the GPWS team, I was the lead on an effort to clean up the SQL databases containing printer records. When devices are moved or deleted, their old records remain
 				 in the tables with their status as “deleted”. These records are retained for the purposes of recordkeeping between the various other systems that connect to the database on the IBM 

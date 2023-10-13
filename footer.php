@@ -2,7 +2,7 @@
 <div class="container">
 <ul class="navi">
 	<li><a href="index.php">Home</a></li>
-	<li><a href="projects.php">Projects</a></li>
+	<li><a href="projects.php">Experience</a></li>
 	<li><a href="Marshall_Jadie_Resume_2022.pdf" target="_blank">Resume</a></li>
 	<li><a href="contact.php">Contact</a></li>
 </ul>
